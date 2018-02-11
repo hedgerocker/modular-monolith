@@ -6,7 +6,14 @@
 	<groupId>com.example</groupId>
 	<artifactId>modular-monolith</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+    <modules>
+		<module>appconfig</module>
+        <module>modulea</module>
+		<module>moduleb</module>
+		<module>moduleaapi</module>
+		<module>modulebapi</module>
+	</modules>
+    <packaging>pom</packaging>
 
 	<name>modular-monolith</name>
 	<description>Modular Monolith demo projet</description>
@@ -35,16 +42,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
 
 </project>
