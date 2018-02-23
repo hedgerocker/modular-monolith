@@ -3,23 +3,21 @@ package com.example.modularmonolith.modulea.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.comularmonolith.moduleaapi.UserServiceApi;
 import com.example.modularmonolith.modulebapi.service.ComputerServiceApi;
+import com.example.modularmonolith.modulec.service.UserIntegrationService;
 
 @Service
-class UserServiceImpl implements UserServiceApi {
+class UserIntegrationServiceImpl implements UserIntegrationService {
 
     private final ComputerServiceApi computerServiceApi;
 
     @Autowired
-    public UserServiceImpl(ComputerServiceApi computerServiceApi) {
+    public UserIntegrationServiceImpl(ComputerServiceApi computerServiceApi) {
         this.computerServiceApi = computerServiceApi;
     }
 
     @Override
-    public String getUserName() {
-        return computerServiceApi.getUserComputer();
+    public String getAppName() {
+        return "Dog";
     }
-
-
 }

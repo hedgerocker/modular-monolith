@@ -10,8 +10,10 @@
 		<module>appconfig</module>
         <module>modulea</module>
 		<module>moduleb</module>
+		<module>modulec</module>
 		<module>moduleaapi</module>
 		<module>modulebapi</module>
+		<module>modulecapi</module>
 	</modules>
     <packaging>pom</packaging>
 

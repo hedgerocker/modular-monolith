@@ -12,16 +12,11 @@
     <dependencies>
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>moduleb-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.example</groupId>
             <artifactId>modulec-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
-    <artifactId>moduleb</artifactId>
+    <artifactId>modulec</artifactId>
 
 </project>
